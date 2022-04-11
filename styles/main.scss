@@ -1,0 +1,113 @@
+@import "general";
+@import "variables";
+
+body {
+  background-color: $Very-pale-blue;
+  background-repeat: no-repeat;
+  background-image: url("../images/pattern-background-desktop.svg");
+}
+
+.card {
+  background-color: white;
+  width: 38rem;
+  height: 60rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+center p {
+  color: $Desaturated-blue;
+  margin-bottom: 2rem;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: $Very-pale-blue;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+
+  &-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.Annual-Plan {
+  font-weight: 900;
+}
+
+.price {
+  color: $Desaturated-blue;
+}
+
+.plan-box2 {
+  color: $Bright-blue;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  &:hover {
+    cursor: pointer;
+    color: $Desaturated-blue;
+  }
+}
+.plan-div {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+}
+
+.payment {
+  background-color: $Bright-blue;
+  border-radius: 1rem;
+  padding: 1rem 7rem;
+  // height: 100%;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 3rem;
+
+  &:hover {
+    background-color: $Dark-blue;
+    cursor: pointer;
+  }
+}
+
+.cancel-order {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: $Desaturated-blue;
+
+  &:hover {
+    color: black;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
